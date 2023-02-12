@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="head">mentoria</h1>
+      <p class="pHead">Preencha o formulário abaixo para<br> agendar a sua mentoria</p>
+    </header>
+    <div id="darkBox"></div>
+
+    <form>
+      <h1>informações pesoais</h1>
+      <div id="line"></div>
+      <div id="inputName">
+          <div class="inputForm">
+            <label for="event-link">Nome</label>
+            <input type="text" />
+          </div>
+          <div class="inputForm">
+            <label for="event-link">Sobrenome</label>
+            <input type="text" />
+          </div>
+      </div>
+      <div class="inputForm">
+        <label for="event-link"
+          >Email <span>(digite um email válido)</span></label
+        >
+        <input type="text" />
+      </div>
+      <div class="inputForm">
+        <label for="event-link"
+          >Senha <span>(minimo de 6 caraceres)</span></label
+        >
+        <input type="text" />
+      </div>
+
+      <h1>informações do mentor</h1>
+      <div id="line"></div>
+
+      <div class="inputForm">
+        <label for="event-link"
+          >Nome do seu mentor <span>(só o primeiro nome)</span></label
+        >
+        <input type="text" />
+      </div>
+
+      <h1>seus horários disponíveis</h1>
+      <div id="line"></div>
+      <h2>primeira mentoria</h2>
+      <div class="inputDate">
+          <div class="inputForm">
+            <label for="event-link">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" />
+          </div>
+          <div class="inputForm inputHour">
+            <label for="event-link">Das</label>
+            <input type="datetime" />
+          </div>
+          <div class="inputForm">
+            <label for="event-link">Até</label>
+            <input type="datetime" />
+          </div>
+      </div>
+      <h2>segunda mentoria</h2>
+      <div class="inputDate">
+          <div class="inputForm">
+            <label for="event-link">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" />
+          </div>
+          <div class="inputForm inputHour">
+            <label for="event-link">Das</label>
+            <input type="datetime" />
+          </div>
+          <div class="inputForm">
+            <label for="event-link">Até</label>
+            <input type="datetime" />
+          </div>
+      </div>
+      <div>
+        <button type="submit">salvar</button>
+      </div>
+    </form>
+  </body>
+</html>
