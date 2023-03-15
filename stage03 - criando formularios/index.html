@@ -28,7 +28,7 @@
 
     <form>
       <h1>informações pesoais</h1>
-      <div id="line"></div>
+      <div id="line-one"></div>
       <div id="inputName">
           <div class="inputForm">
             <label for="event-link">Nome</label>
@@ -62,13 +62,13 @@
         <input type="text" />
       </div>
 
-      <h1>seus horários disponíveis</h1>
+      <h1 class="hour-disp">seus horários disponíveis</h1>
       <div id="line"></div>
       <h2>primeira mentoria</h2>
       <div class="inputDate">
           <div class="inputForm">
-            <label for="event-link">Data <span>(DD/MM/AAAA)</span></label>
-            <input type="date" />
+            <label id="date" for="event-link">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"/>
           </div>
           <div class="inputForm inputHour">
             <label for="event-link">Das</label>
@@ -82,8 +82,8 @@
       <h2>segunda mentoria</h2>
       <div class="inputDate">
           <div class="inputForm">
-            <label for="event-link">Data <span>(DD/MM/AAAA)</span></label>
-            <input type="date" />
+            <label id="date" for="event-link">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"/>
           </div>
           <div class="inputForm inputHour">
             <label for="event-link">Das</label>
@@ -94,7 +94,7 @@
             <input type="datetime" />
           </div>
       </div>
-      <div>
+      <div id="footer">
         <button type="submit">salvar</button>
       </div>
     </form>
