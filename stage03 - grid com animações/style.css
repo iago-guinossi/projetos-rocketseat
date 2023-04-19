@@ -1,0 +1,149 @@
+:root{
+    --bg-header:#8E9AAF;
+    --bg-headerText: #CBC0D3; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#main {
+    display: flex;
+}
+
+#header {
+    width: 377px;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 32px 0 125px;
+    background-color: var(--bg-header);
+    flex-shrink: 0;
+}
+
+#headerText {
+    background-color: var(--bg-headerText);
+    text-transform: uppercase;
+    font-family: 'Staatliches';
+font-size: 48px;
+line-height: 34px;
+height: 70px;
+box-sizing: border-box;
+color: #FFFFFF;
+padding: 21px 73px 20px 74px;
+}
+
+#mainText {
+    text-align: center;
+    width: 262px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#images img{
+    width: 220px;
+    animation-name: downtop;
+    animation-duration: 1000ms;
+    transition-duration: 500ms;
+}
+
+#images img:hover{
+    transform: scale(1.1);
+}
+
+#images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 724px;
+    height: 532px;
+}
+
+.image {
+    position: relative;
+}
+
+.creamSmall {
+    height: 150px;
+ }
+
+ .creamLarge {
+    height: 350px;
+ }
+
+ #container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 64px 0 46px;
+ }
+
+ .floating {
+    animation-name: topdown;
+    animation-delay: 500ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #FEEAFA;
+    font-size: 20px;
+    padding: 1px 23px 0 24px;
+    border-radius: 20px;
+    font-family: 'Staatliches';
+    color: #4A4E69;
+}
+
+#link {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #4A4E69;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4A4E69;
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
