@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    position: relative;
+}
+
+#holeOne {
+    position: absolute;
+    left: 167px;
+    top: 226px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeOne:hover {
+    animation-name: upDown;
+    animation-duration: 1000ms;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+#holeTwo {
+    position: absolute;
+    left: 442.81px;
+    top: 226px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeThree {
+    position: absolute;
+    left: 718.62px;
+    top: 226px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeFour {
+    position: absolute;
+    left: 994.43px;
+    top: 226px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeFive {
+    position: absolute;
+    left: 167px;
+    top: 448.11px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeSix {
+    position: absolute;
+    left: 442.81px;
+    top: 448.11px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeSeven {
+    position: absolute;
+    left: 718.62px;
+    top: 448.11px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeEight {
+    position: absolute;
+    left: 994.43px;
+    top: 448.11px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeNine {
+    position: absolute;
+    left: 167px;
+    top: 642.47px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeTen {
+    position: absolute;
+    left: 442.81px;
+    top: 642.47px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeEleven {
+    position: absolute;
+    left: 718.62px;
+    top: 642.47px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+#holeTwelve {
+    position: absolute;
+    left: 994.43px;
+    top: 642.47px;
+    background-image: url(./src/image/hole.svg);
+    background-size: cover;
+    display: block;
+    width: 223px;
+    height: 169px;
+}
+
+@keyframes upDown {
+    0% {
+        background-image: url(./src/image/hole.svg);
+    }
+    33%  {
+        background-image: url(./src/image/toupeira3.svg);
+    }
+    66%  {
+        background-image: url(./src/image/toupeira2.svg);
+    }
+    100%  {
+        background-image: url(./src/image/toupeira.svg);
+    }
+}
